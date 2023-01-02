@@ -1,0 +1,45 @@
+
+.operator{
+    font-size: 20px;
+    color: #3783CD;
+}
+
+.text{
+    font-size: 20px;
+    color: #C8C8C8;
+}
+
+.preprocessor-directive{
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+.library{
+    font-size: 20px;
+    color: #D69D85;
+}
+
+.define-operand1{
+    font-size: 20px;
+    color: #BD63C5;
+}
+
+.define-operand2{
+    font-size: 20px;
+    color: #DCDCDC;
+}
+
+.numbers{
+    font-size: 20px;
+    color: #B5CEA8;
+}
+
+.string{
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+.comment{
+    font-size: 20px;
+    color: #57A64A;
+}
