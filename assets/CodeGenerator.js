@@ -94,6 +94,9 @@ window.CodeGenerator = {
                 label.addClass("space");
                 text = '<pre> </pre>';
                 break;
+            default:
+                label.addClass("text");
+                break;
         }
 
         switch(operator) {
