@@ -162,7 +162,7 @@ window.CodeGenerator = {
             case window.CodeGenerator.LogicalOperator.AND:
                 return a && b;
             default:
-                return 0;
+                return false;
         }
     },
 
@@ -228,5 +228,8 @@ window.random = {
     },
     nextInt: function(max) {
         return Math.floor(Math.random() * max);
-    }
+    },
+    nextBoolean: function() {
+        return window.random.nextInt(2) == 1;
+    },
 }
