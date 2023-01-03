@@ -123,3 +123,7 @@ pre {
     pointer-events:none;
     color:#717375;
 }
+
+.none {
+    display: none;
+}
