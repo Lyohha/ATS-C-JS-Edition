@@ -82,4 +82,27 @@ $(document).ready(function() {
 
     document.head.appendChild(script);
 
+    var menu = {
+        onBackMenuClick: function(event) {
+            event.preventDefault();
+            let link = window.location.href.split('/');
+
+            link.splice(link.length - 2, 2);
+            console.log(link);
+
+            window.location.href = link.join('/');
+        },
+        onMenuClick: function(event) {
+            event.preventDefault();
+            window.location.href = window.location.href + '/' + this.getAttribute('href');
+        },
+        init: function() {
+            $('[js-menu]').click(this.onMenuClick);
+            $('[js-back-menu]').click(this.onBackMenuClick);
+
+            return this;
+        }
+    }.init();
+
+
 });
