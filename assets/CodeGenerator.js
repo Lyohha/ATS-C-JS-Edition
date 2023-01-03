@@ -221,10 +221,16 @@ window.HBox = function() {
 }
 
 window.random = {
-    key: function(obj) {
+    key: function(obj, max = null) {
         let keys = Object.keys(obj);
+
+        if(max == null)
+            max = keys.length;
+
+        if(max > keys.length)
+            max = keys.length;
         
-        return obj[keys[window.random.nextInt(keys.length)]];
+        return obj[keys[window.random.nextInt(max)]];
     },
     nextInt: function(max) {
         return Math.floor(Math.random() * max);
