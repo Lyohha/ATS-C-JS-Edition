@@ -38,7 +38,7 @@ class TemplateGenerator {
         this.lines.push(window.HBox(
             window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tint", window.CodeGenerator.CodeType.OPERATOR),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" x, y="),
                 window.CodeGenerator.createPart(y),
                 window.CodeGenerator.createPart(", z;")
@@ -67,9 +67,9 @@ class TemplateGenerator {
                 window.CodeGenerator.createPart(") x="),
                 window.CodeGenerator.createPart(n2),
                 window.CodeGenerator.createPart("; "),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart("else", window.CodeGenerator.CodeType.OPERATOR),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" x="),
                 window.CodeGenerator.createPart(n3),
                 window.CodeGenerator.createPart(";")
@@ -109,7 +109,7 @@ class TemplateGenerator {
                 window.CodeGenerator.createPart(window.CodeGenerator.getOperator(c1)),
                 window.CodeGenerator.createPart(n1),
                 window.CodeGenerator.createPart(") "),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart("if", window.CodeGenerator.CodeType.OPERATOR),
                 window.CodeGenerator.createPart("(y"),
                 window.CodeGenerator.createPart(window.CodeGenerator.getOperator(c2)),
