@@ -113,6 +113,7 @@ footer {
 
 .code-line {
     display: flex;
+    height: 24px;
 }
 
 pre {
