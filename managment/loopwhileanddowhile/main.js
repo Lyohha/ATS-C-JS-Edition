@@ -35,12 +35,12 @@ class TemplateGenerator {
         let y = window.random.nextInt(20);
         let z = window.random.nextInt(20);
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tint", window.CodeGenerator.CodeType.OPERATOR),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" x="),
                 window.CodeGenerator.createPart(x),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" y="),
                 window.CodeGenerator.createPart(y),
                 window.CodeGenerator.createPart(";")
@@ -67,18 +67,18 @@ class TemplateGenerator {
         variables.x = parseInt(window.CodeGenerator.exeOperator(variables.x, variables.y, o1));
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\twhile", window.CodeGenerator.CodeType.OPERATOR),
                 window.CodeGenerator.createPart("(y"),
                 window.CodeGenerator.createPart(window.CodeGenerator.getOperator(c1)),
                 window.CodeGenerator.createPart(n1),
                 window.CodeGenerator.createPart(") "),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart("y", ido1),
                 window.CodeGenerator.createPart("; x"),
                 window.CodeGenerator.createPart(window.CodeGenerator.getOperator(o1)),
                 window.CodeGenerator.createPart("=y;"),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" printf("),
                 window.CodeGenerator.createPart("\"%d\\n\"", window.CodeGenerator.CodeType.STRING),
                 window.CodeGenerator.createPart(", x)"),
@@ -101,7 +101,7 @@ class TemplateGenerator {
                 ido1 = variables.y > 5 ? window.CodeGenerator.IDOperator.PREFIXDECREMENT : window.CodeGenerator.IDOperator.PREFIXINCREMENT;
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tx="),
                 window.CodeGenerator.createPart(variables.x),
                 window.CodeGenerator.createPart("; y="),
@@ -114,7 +114,7 @@ class TemplateGenerator {
             variables.x = window.CodeGenerator.exeOperator(variables.x, variables.y, o1);
         }
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\twhile", window.CodeGenerator.CodeType.OPERATOR),
                 window.CodeGenerator.createPart("(y"),
                 window.CodeGenerator.createPart(window.CodeGenerator.getOperator(c1)),
@@ -127,7 +127,7 @@ class TemplateGenerator {
         ));
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tprintf("),
                 window.CodeGenerator.createPart("\"%d\\n\"", window.CodeGenerator.CodeType.STRING),
                 window.CodeGenerator.createPart(", x)"),
@@ -135,7 +135,7 @@ class TemplateGenerator {
         ));
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tprintf("),
                 window.CodeGenerator.createPart("\"%d\\n\"", window.CodeGenerator.CodeType.STRING),
                 window.CodeGenerator.createPart(", y)"),
@@ -154,7 +154,7 @@ class TemplateGenerator {
                 o1 = window.random.nextInt(2) == 1 ? window.CodeGenerator.Operator.ADDITION : window.CodeGenerator.Operator.DIFFERENCE;
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\ty="),
                 window.CodeGenerator.createPart(variables.y),
                 window.CodeGenerator.createPart("; z="),
@@ -168,21 +168,21 @@ class TemplateGenerator {
         while (--variables.y > n1);
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tdo", window.CodeGenerator.CodeType.OPERATOR),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" z"),
                 window.CodeGenerator.createPart(window.CodeGenerator.getOperator(o1)),
                 window.CodeGenerator.createPart("=y;")
         ));
 
         this.lines.push(window.HBox(
-            window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.TAB),
+            window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\twhile", window.CodeGenerator.CodeType.OPERATOR),
                 window.CodeGenerator.createPart("(--y>"),
                 window.CodeGenerator.createPart(n1),
                 window.CodeGenerator.createPart("); "),
-                window.window.CodeGenerator.createPart("", window.window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" printf("),
                 window.CodeGenerator.createPart("\"%d\\n\"", window.CodeGenerator.CodeType.STRING),
                 window.CodeGenerator.createPart(", z)"),
@@ -194,29 +194,29 @@ class TemplateGenerator {
 
     createFirstsLine() {
         this.lines.push(window.HBox(
-                window.window.window.CodeGenerator.createPart("#include", window.window.CodeGenerator.CodeType.DIRECTIVE),
-                window.window.window.CodeGenerator.createPart("", window.window.window.CodeGenerator.CodeType.SPACE),
-                window.window.window.CodeGenerator.createPart(" <stdio.h>", window.window.CodeGenerator.CodeType.LIBRARY)
+                window.CodeGenerator.createPart("#include", window.CodeGenerator.CodeType.DIRECTIVE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart(" <stdio.h>", window.CodeGenerator.CodeType.LIBRARY)
         ));
 
         this.lines.push(window.HBox(
-                window.window.window.CodeGenerator.createPart(" ")
+                window.CodeGenerator.createPart(" ")
         ));
 
         this.lines.push(window.HBox(
-                window.window.window.CodeGenerator.createPart("void", window.window.CodeGenerator.CodeType.OPERATOR),
-                window.window.window.CodeGenerator.createPart("", window.window.window.CodeGenerator.CodeType.SPACE),
-                window.window.window.CodeGenerator.createPart(" main()")
+                window.CodeGenerator.createPart("void", window.CodeGenerator.CodeType.OPERATOR),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart(" main()")
         ));
 
         this.lines.push(window.HBox(
-                window.window.window.CodeGenerator.createPart("{")
+                window.CodeGenerator.createPart("{")
         ));
     }
 
     createLastLine() {
         this.lines.push(window.HBox(
-                window.window.window.CodeGenerator.createPart("}")
+                window.CodeGenerator.createPart("}")
         ));
     }
 }
