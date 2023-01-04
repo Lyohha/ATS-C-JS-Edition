@@ -10,7 +10,7 @@ class TemplateGenerator {
     }
 
     getName() {
-        return 'Вирази логіки';
+        return 'Приведення типів (частина 1)';
     }
 
     setTemplate(pane) {
