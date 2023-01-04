@@ -10,7 +10,7 @@ class TemplateGenerator {
     }
 
     getName() {
-        return 'Класи пам\'яті: функції (частина 2)';
+        return 'Класи пам\'яті: файли';
     }
 
     setTemplate(pane) {
