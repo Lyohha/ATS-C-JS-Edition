@@ -107,7 +107,7 @@ footer {
 
 .task {
     font-size: 20px;
-    overflow-y: auto;
+    overflow: auto;
     background-color: #262626;
 }
 
@@ -148,4 +148,50 @@ pre {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .task {
+        overflow: unset;
+        width: 100%;
+    }
+
+    body {
+        height: unset;
+    }
+
+    .right_container {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .answers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .answers-line {
+        margin: 0px auto 20px auto;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 0 auto;
+    }
 }
