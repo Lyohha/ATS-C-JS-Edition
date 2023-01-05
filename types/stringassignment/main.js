@@ -161,6 +161,12 @@ class TemplateGenerator {
         ));
 
         this.lines.push(window.HBox(
+                window.CodeGenerator.createPart("#include", window.CodeGenerator.CodeType.DIRECTIVE),
+                window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.SPACE),
+                window.CodeGenerator.createPart(" <string.h>", window.CodeGenerator.CodeType.LIBRARY)
+        ));
+
+        this.lines.push(window.HBox(
                 window.CodeGenerator.createPart(" ")
         ));
 
