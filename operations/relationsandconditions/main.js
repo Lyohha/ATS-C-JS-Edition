@@ -38,6 +38,7 @@ class TemplateGenerator {
         this.lines.push(window.HBox(
             window.CodeGenerator.createPart("", window.CodeGenerator.CodeType.TAB),
                 window.CodeGenerator.createPart("\tint", CodeGenerator.CodeType.OPERATOR),
+                window.CodeGenerator.createPart("", CodeGenerator.CodeType.SPACE),
                 window.CodeGenerator.createPart(" x="),
                 window.CodeGenerator.createPart(x),
                 window.CodeGenerator.createPart(", y="),
