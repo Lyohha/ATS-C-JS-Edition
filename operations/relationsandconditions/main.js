@@ -117,7 +117,7 @@ class TemplateGenerator {
                 variables.x = CodeGenerator.exeOperator(variables.x, ido1);
                 variables.z = parseInt(CodeGenerator.exeOperator(variables.z, variables.x, o1));
             } else {
-                variables.z = CodeGenerator.exeOperator(variables.z, variables.x, o1);
+                variables.z = parseInt(CodeGenerator.exeOperator(variables.z, variables.x, o1));
                 variables.x = CodeGenerator.exeOperator(variables.x, ido1);
             }
         } else {
@@ -125,7 +125,7 @@ class TemplateGenerator {
                 variables.y = CodeGenerator.exeOperator(variables.y, ido2);
                 variables.z = parseInt(CodeGenerator.exeOperator(variables.z, variables.y, o1));
             } else {
-                variables.z = CodeGenerator.exeOperator(variables.z, variables.y, o1);
+                variables.z = parseInt(CodeGenerator.exeOperator(variables.z, variables.y, o1));
                 variables.y = CodeGenerator.exeOperator(variables.y, ido2);
             }
         }
