@@ -115,7 +115,7 @@ class TemplateGenerator {
         if (CodeGenerator.compare(variables.x, variables.y, c1) == 1) {
             if (ido1 == CodeGenerator.IDOperator.PREFIXDECREMENT || ido1 == CodeGenerator.IDOperator.PREFIXINCREMENT) {
                 variables.x = CodeGenerator.exeOperator(variables.x, ido1);
-                variables.z = CodeGenerator.exeOperator(variables.z, variables.x, o1);
+                variables.z = parseInt(CodeGenerator.exeOperator(variables.z, variables.x, o1));
             } else {
                 variables.z = CodeGenerator.exeOperator(variables.z, variables.x, o1);
                 variables.x = CodeGenerator.exeOperator(variables.x, ido1);
@@ -123,7 +123,7 @@ class TemplateGenerator {
         } else {
             if (ido2 == CodeGenerator.IDOperator.PREFIXDECREMENT || ido2 == CodeGenerator.IDOperator.PREFIXINCREMENT) {
                 variables.y = CodeGenerator.exeOperator(variables.y, ido2);
-                variables.z = CodeGenerator.exeOperator(variables.z, variables.y, o1);
+                variables.z = parseInt(CodeGenerator.exeOperator(variables.z, variables.y, o1));
             } else {
                 variables.z = CodeGenerator.exeOperator(variables.z, variables.y, o1);
                 variables.y = CodeGenerator.exeOperator(variables.y, ido2);
